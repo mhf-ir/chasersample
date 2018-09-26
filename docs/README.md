@@ -7,13 +7,14 @@ Chaser sample
 API
 ---
 
-See [API documentations](./docs).
+See [API documentations](./docs/README.md).
 
 ## Index
 
 ### External modules
 
 * ["IChaserSample"](modules/_ichasersample_.md)
+* ["avg"](modules/_avg_.md)
 * ["sort"](modules/_sort_.md)
 
 ---
