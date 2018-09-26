@@ -1,23 +1,12 @@
 import { expect } from 'chai';
-import faker from 'faker';
+
+import {
+  getFakeChaserSample,
+  isBiggerThan,
+} from './util';
 
 import IChaserSample from '../src/IChaserSample';
 import sort from '../src/sort';
-
-const getFakeChaserSample = (): IChaserSample => {
-  const sample: IChaserSample = {
-    name: faker.name.findName(),
-    ranking: faker.random.number(),
-  };
-  return sample;
-};
-
-const isBiggerThan = (a: IChaserSample, b: IChaserSample): boolean => {
-  if (a.ranking > b.ranking) {
-    return true;
-  }
-  return false;
-};
 
 describe('Sort', () => {
   it('Must be sort well as we expected via static data', () => {
