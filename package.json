@@ -15,7 +15,7 @@
   "scripts": {
     "coverage": "NODE_ENV=test nyc mocha -r ts-node/register test/**/*.spec.ts",
     "coverage-coverall": "cat coverage/lcov.info | coverall",
-    "doc": "typedoc --target es2017 --hideGenerator --theme minimal --out doc src",
+    "doc": "typedoc --target es2017 --hideGenerator --theme minimal --out docs src",
     "lint": "tslint --project .",
     "test": "NODE_ENV=test mocha -r ts-node/register test/**/*.spec.ts"
   },
