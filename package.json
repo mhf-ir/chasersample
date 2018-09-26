@@ -1,0 +1,58 @@
+{
+  "name": "chasersample",
+  "version": "0.0.1",
+  "description": "Chaser sample code",
+  "main": "index.js",
+  "private": true,
+  "authors": [
+    {
+      "name": "Muhammad Hussein Fattahizadeh",
+      "email": "semnanweb@gmail.com",
+      "url": "https://github.com/mhf-ir"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {
+    "coverage": "NODE_ENV=test nyc mocha -r ts-node/register test/**/*.spec.ts",
+    "coverage-coverall": "cat coverage/lcov.info | coverall",
+    "doc": "typedoc --target es2017 --hideGenerator --theme minimal --out doc src",
+    "lint": "tslint --project .",
+    "test": "NODE_ENV=test mocha -r ts-node/register test/**/*.spec.ts"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "html",
+      "json-summary",
+      "lcov",
+      "text-summary"
+    ],
+    "sourceMap": true,
+    "instrument": true
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^4.1",
+    "@types/faker": "^4.1.4",
+    "@types/mocha": "^5.2",
+    "@types/node": "^10",
+    "chai": "^4.1",
+    "faker": "^4.1.0",
+    "mocha": "^5.2",
+    "nyc": "^13.0",
+    "ts-node": "^7.0",
+    "tslint": "^5.11",
+    "tslint-config-airbnb": "^5.11",
+    "tslint-sonarts": "^1.8",
+    "typedoc": "^0.12",
+    "typescript": "^3.0"
+  }
+}

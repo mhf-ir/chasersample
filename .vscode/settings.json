@@ -1,0 +1,15 @@
+{
+  "editor.tabSize": 2,
+  "workbench.editor.enablePreview": false,
+  "cSpell.ignorePaths": [
+    "**/.git/**",
+    "**/node_modules/**",
+    "**/vscode-extension/**",
+    "**/package-lock.json",
+    ".nyc_output/",
+    ".vscode",
+    "coverage/",
+    "dist/",
+    "typings",
+  ]
+}
