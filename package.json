@@ -14,7 +14,7 @@
   "license": "MIT",
   "scripts": {
     "coverage": "NODE_ENV=test nyc mocha -r ts-node/register test/**/*.spec.ts",
-    "coverage-coverall": "cat coverage/lcov.info | coverall",
+    "coverage-coveralls": "cat coverage/lcov.info | coverall",
     "doc": "typedoc --target es2017 --hideGenerator --theme minimal --out docs src",
     "lint": "tslint --project .",
     "test": "NODE_ENV=test mocha -r ts-node/register test/**/*.spec.ts"
@@ -38,7 +38,9 @@
     "sourceMap": true,
     "instrument": true
   },
-  "dependencies": {},
+  "dependencies": {
+    "coveralls": "^3.0.2"
+  },
   "devDependencies": {
     "@types/chai": "^4.1",
     "@types/faker": "^4.1.4",
