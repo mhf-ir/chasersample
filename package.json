@@ -15,7 +15,7 @@
   "scripts": {
     "coverage": "NODE_ENV=test nyc mocha -r ts-node/register test/**/*.spec.ts",
     "coverage-coveralls": "cat coverage/lcov.info | coveralls",
-    "doc": "typedoc --target es2017 --hideGenerator --theme minimal --out docs src",
+    "doc": "typedoc --target es2017 --hideGenerator --theme markdown --out docs src",
     "lint": "tslint --project .",
     "test": "NODE_ENV=test mocha -r ts-node/register test/**/*.spec.ts"
   },
@@ -55,6 +55,7 @@
     "tslint-config-airbnb": "^5.11",
     "tslint-sonarts": "^1.8",
     "typedoc": "^0.12",
+    "typedoc-plugin-markdown": "^1.1.15",
     "typescript": "^3.0"
   }
 }
