@@ -23,7 +23,7 @@
 
 **● name**: *`string`*
 
-*Defined in [IChaserSample.ts:2](https://github.com/mhf-ir/chasersample/blob/0181665/src/IChaserSample.ts#L2)*
+*Defined in [IChaserSample.ts:2](https://github.com/mhf-ir/chasersample/blob/d43408a/src/IChaserSample.ts#L2)*
 
 ___
 <a id="ranking"></a>
@@ -32,7 +32,7 @@ ___
 
 **● ranking**: *`number`*
 
-*Defined in [IChaserSample.ts:3](https://github.com/mhf-ir/chasersample/blob/0181665/src/IChaserSample.ts#L3)*
+*Defined in [IChaserSample.ts:3](https://github.com/mhf-ir/chasersample/blob/d43408a/src/IChaserSample.ts#L3)*
 
 ___
 

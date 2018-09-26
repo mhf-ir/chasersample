@@ -7,7 +7,7 @@ Chaser sample
 API
 ---
 
-See [API documentations](./docs/README.md).
+See [API documentations](https://github.com/mhf-ir/chasersample/blob/master/docs/README.md).
 
 ## Index
 
